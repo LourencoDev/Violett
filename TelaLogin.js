@@ -31,7 +31,7 @@ render(){
                 
                 ></Image>
                 
-                <TextInput style={styles.input} placeholder="Usuário" underlineColorAndroid="transparent"></TextInput>
+                <TextInput style={styles.input} placeholder="Email" underlineColorAndroid="transparent"></TextInput>
                 <TextInput style={styles.input} placeholder="Senha" underlineColorAndroid="transparent"></TextInput>
                 <TouchableOpacity
                 style={styles.botaoLogar}
