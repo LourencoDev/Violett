@@ -1,18 +1,18 @@
 import axios from "axios";
 
 const api = {
-  criadorCadastrar: {
+  criadorCadastrar: axios.create({
     baseURL: "http://localhost:3000/criador/cadastrar";
-  },
-  criadorLogin: {
+  }),
+  criadorLogin: axios.create({
     baseURL: "http://localhost:3000/criador/login";
-  },
-  recrutadorCadastrar: {
+  }),
+  recrutadorCadastrar: axios.create({
     baseURL: "http://localhost:3000/recrutador/cadastrar";
-  },
-  recrutadorLogin: {
+  }),
+  recrutadorLogin: axios.create({
     baseURL: "http://localhost:3000/recrutador/login";
-  },
+  }),
 }
 
 export default api;
