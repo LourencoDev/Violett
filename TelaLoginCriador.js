@@ -21,7 +21,22 @@ class App extends Component {
 render(){ 
 
     return ( 
-
+         
+         async function login(){
+           const criadores = await api.post("/criador/login");
+           const email = email; // Adicionar aqui o campo de email digitado
+           const senha = senha; // Adicionar aqui o campo de senha digitado
+           const logado = false;
+           criadores.forEach(criador => {
+             if(email == criador.email && senha == criador.senha)
+               logado = true;
+           });
+           if(logado)
+             console.log("Logado com sucesso!");
+           else
+             console.log("Email ou senha incorreta!");
+         }
+     
         <View style={styles.visao}
             
             >
