@@ -24,7 +24,7 @@ render(){
          
          async function login(){
            const criadores = await api.post("/criador/login");
-           console.log(criadores)
+           console.log(criadores);
          }
      
         <View style={styles.visao}
@@ -38,7 +38,7 @@ render(){
                 
                 <TextInput style={styles.input} placeholder="Email" underlineColorAndroid="transparent"></TextInput>
                 <TextInput style={styles.input} placeholder="Senha" underlineColorAndroid="transparent"></TextInput>
-                <TouchableOpacity
+                <TouchableOpacity onPress={login}
                 style={styles.botaoLogar}
                 
                 >
